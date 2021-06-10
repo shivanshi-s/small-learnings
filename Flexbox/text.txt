@@ -1,0 +1,52 @@
+Axis
+
+container -> direction and by default it is horizontal
+Main axis - l to r (horizontal) (row)
+cross axis -  top to bottm (vertical) (column)
+
+Justify content
+Along the main axis : left to right 
+By default - set to flex-start (left hand)
+flex-end : right hand side
+space-around : equal amt to left n right side
+space-between : space in between and corners are taken
+space-evenly : even spaces in between (not much different that space around but google)
+
+Positioning Items
+Margin:auto;
+Margin-right:auto;
+
+Flex Property
+set width of items to the width of the container
+flex-grow,flex-shrink, flex-basis
+
+Align Items 
+Cross-axis : t to bottom
+height : 100% -> stretch 
+Works only because html and body's height is 100%
+align-items : flex-start -> to start as much height as they need
+flex-end : 
+center : center inside of a container with Justify-content : center; 
+
+single item : align-self : flex-start;
+
+Flex direction column  
+height : 100%
+
+wrapping
+nowrap by default
+flex:wrap; -> wraps within the width
+
+flex grow, shrink, basis
+flex: flex-grow flex-shrink flex-basis ; 
+flex: 1          1           0 ;
+
+Flex-basis -> setting the base width of the element , if less then width, then shrink
+flex-grow -> how much extra space should be distributed to the items and grow with the width 
+flex-shrink -> default = 1 ; 
+
+Order ::::::::
+move around the items regardless markup
+order:1 ->placed at the end
+order:-1 -> placed at the beginning
+
