@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background: rgb(255,231,242);
+background: linear-gradient(124deg, rgba(255,231,242,0.7438020252046131) 12%, rgba(254,255,233,0.8894602885099352) 83%);
+  }
+  .navbar {
+    background: rgba(211, 190, 200, 0.472);
+   font-family: 'Merriweather';
+    background-image: none;
+}
+.wrapper {
+    background: url(./assets/restaurant-blurred-background.jpg) no-repeat;
+    /* Add the blur effect */
+
+  /* Full height */
+  height: 90%; 
+  overflow:hidden;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-text {
+    z-index: 700;
+    position: relative;
+    color: #000000;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+    font-size: 500px;
+    font-weight: 700;
+    font-family: 'Rubik';
+    text-shadow: 10px 10px rgba(168, 88, 88, 0.2);
+}
+
+::selection {
+  color: rgb(255, 131, 193);
+}
+
+.card {
+  width: 70%;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  margin-top: 0.5rem;
+}
+.col {
+  justify-content: center;
+  align-items: center;
+}
+
