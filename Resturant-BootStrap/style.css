@@ -39,7 +39,23 @@ background: linear-gradient(124deg, rgba(255,231,242,0.7438020252046131) 12%, rg
     font-family: 'Rubik';
     text-shadow: 10px 10px rgba(168, 88, 88, 0.2);
 }
-
+.btn {
+  z-index: 700;
+  position: relative;
+  color: rgb(26, 22, 24);
+  font-weight: 700;
+  width: 20%;
+  background-color: rgb(228, 99, 157);
+  text-align: center;
+  justify-content: center;
+  top: 50%;
+  left: 40%;
+  border-width: 0.5rem;
+  border-radius: 2rem;
+}
+.btn:hover {
+  background-color: salmon;
+}
 ::selection {
   color: rgb(255, 131, 193);
 }
