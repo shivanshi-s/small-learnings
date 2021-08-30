@@ -1,0 +1,51 @@
+:root {
+   --txt-clr: #A5605F;
+   --bg-clr:#FFD0DC;
+}
+* {
+    margin: 0;
+}
+body {
+    background-image:url(./assets/backgroung.svg);
+    background-attachment: fixed;
+    background-size: cover;  
+   
+}
+header {
+    box-sizing: border-box;
+    font-family: 'Merriweather',sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%; 
+}
+.logo {
+    cursor: pointer;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color:var(--txt-clr) ;
+}
+.nav-links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #202425;
+}
+.cta-btn {
+    padding: 9px 20px;
+    background-color: rgb(158, 78, 110);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.cta-btn:hover {
+    background-color: rgba(143, 67, 97, 0.8);
+}
