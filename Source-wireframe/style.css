@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&family=Secular+One&display=swap');
+* {
+   box-sizing: border-box;
+}
+:root {
+   --main:#536878;
+}
+body {
+   margin: 0%;
+   padding: 0%;
+   font-family: 'Radio Canada','Secular One',serif;
+}
+.navbar {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: var(--main);
+}
+.brand-title {
+   font-size: 1.5rem;
+   margin: .5rem;
+}
+.navbar-links ul {
+   display: flex;
+   margin: 0;
+   padding: 0%;
+}
+.navbar-links li {
+   list-style: none;
+}
+.navbar-links li a {
+   text-decoration: none;
+   padding: 1rem;
+   display: block;
+   color: var(--main);
+}
+.navbar-links li a:hover {
+   color: darkblue;
+}
+.button, .nav-btn {
+   color: white;
+   background-color: rgb(63, 63, 112);
+   padding: 0.7rem 1rem 0.7rem 1rem;
+   border: none;
+   margin: 0.2rem;
+}
+/* styling the toggle button */
+.toggle-button {
+   position: absolute;
+   top: 0.75rem;
+   right: 1rem;
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 30px;
+   height: 20px;
+}
+.toggle-button .bar {
+   height: 3px;
+   width: 100%;
+   background-color: black;
+   border-radius:10px;
+}
+
+@media (max-width:600px) {
+   .toggle-button {
+      display: flex;
+   }
+   .navbar-links {
+      display: none;
+      width: 100%;
+   }
+   .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+   }
+   .navbar-links li {
+      text-align: center;
+   }
+   .navbar-links li a {
+      padding: 0.5rem 1rem;
+   }
+   .navbar-links.active {
+      display: flex;
+   }
+   .nav-btn {
+      display: none;
+   }
+}
+/* main body styling  */
+
+.left {
+   display: flex;
+   flex-direction: column;
+   margin: 2rem;
+}
+.left form input {
+   width: 20%;
+   height: 2.5rem;
+   background-color: #536878;
+}
+::-webkit-input-placeholder {
+   color: rgba(255, 255, 255, 0.733);
+   letter-spacing: 0.15rem;
+}
